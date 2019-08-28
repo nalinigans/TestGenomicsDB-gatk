@@ -48,4 +48,4 @@ WORKDIR /home/${user}/gatk
 RUN ./gatk GenomicsDBImport -V /test/vcfs/t0.vcf --genomicsdb-workspace-path gdb_ws -L 1:500-100000
 RUN ./gatk SelectVariants -V gendb://gdb_ws -R /test/reference/chr1_10MB.fasta.gz -O out.vcf
 
-ENTRYPOINT ["/bin/bash", "--login"]
+#ENTRYPOINT ["/bin/bash", "--login"]
