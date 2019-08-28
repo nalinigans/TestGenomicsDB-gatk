@@ -14,7 +14,7 @@ Examples:
 ```
 git clone https://github.com/nalinigans/TestGenomicsDB-gatk.git
 cd TestGenomicsDB-gatk
-docker build --build-arg os=ubuntu branch=nalini_test -t gatk:ubuntu . 
+docker build --build-arg os=ubuntu --build-arg branch=nalini_test -t gatk:ubuntu . 
 ```
 
 To run and enter the bash shell:
